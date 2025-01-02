@@ -1,0 +1,723 @@
+/* Responsive Section  */
+
+
+@media(max-width:1100px){
+
+    .contact-menu{
+        width: calc(1100px - 120px);
+     }
+
+     .Wallpaper-section{
+        background-image: url("../img/carousel-1.jpg");
+        /* background-position: center center; */
+        background-repeat: no-repeat;
+        /* background-attachment:fixed; */
+        background-size:cover;
+        position: relative;
+        z-index: -1;
+        /* top: -50px; */
+        height:100vh;
+    
+    }
+
+    .Next-wallpaper-img{
+        background-image: url("../img/carousel-2.jpg");
+    }
+
+    .main-navbar{
+        width: calc(1100px - 110px);
+    }
+
+    .menu-icon-separation{
+        gap: 90px;
+    }
+
+    .f-box-one{
+        width: 32%;
+    }
+
+    .servics{
+        width: 98%;
+        margin: auto;
+    }
+
+    .c-title{
+        font-size: 4.5rem;
+        width: 90%;
+    }
+
+    /* .depart-date{
+        padding: 1% 1%;
+        margin: auto;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        width: 100%;
+        max-width: 24%;
+    } */
+
+     
+}
+
+@media(max-width:5000px) and (min-width:975px){
+    
+    .dropdown-display{
+        display: none;
+    }
+
+}
+
+@media(max-width:975px){
+
+    .andaman-sec-img{
+        width:96%;
+        max-width: 96%;
+        margin: auto;
+        height: auto;
+        /* background-image: url("https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-repeat: no-repeat; */
+    
+     }
+    
+     .package-detail{
+        width:100%;
+        max-width: 100%;
+        height: auto;
+     }
+
+    .andaman-section{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .andaman-img{
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+
+    }
+
+    .get-quote{
+        max-width: 96%;
+    }
+
+    .price-tag-quote{
+        width: 100%;
+        max-width: 99%;
+        margin: auto;
+    }
+
+    /* .dropdown-display{
+        display: none;
+    }
+
+    .dropdown{
+        width: 100%;
+        height: auto;
+        background-color: red;   
+        margin-top: 12px;
+        margin-bottom: -14px;
+         
+    }
+
+    .dropdown li{
+        color: #000;
+    }
+
+    .dropdown li:hover{
+        color:#7AB730;
+    } */
+
+    
+
+    /* Drop Down  */
+
+    .red{
+        text-decoration:underline transparent 5px;
+        text-underline-offset: 2.3rem;
+        color: #7AB730;
+    }
+
+    .drop-down{
+        display: none;
+    }
+    
+    .drop-down-one{
+        display: none;
+    }
+
+    .dropdown-one-display{
+        width: 90%;
+        padding: 10px 0 10px 0;
+        margin-bottom: 5px; 
+    }
+
+    .dropdown-display{
+        width: 90%;
+        padding: 10px 0 10px 0;
+        margin-bottom: 5px;
+    }
+
+    
+
+    ul li {
+        width: 90%;
+        padding: 10px 0 10px 0;
+        margin-bottom: 5px;
+    }
+
+    ul li ul li ul li:hover
+    {
+     background-color:transparent;
+    } 
+    
+    .main-navbar li ul li ul
+    {
+    left: auto;
+    margin-top: 6px;
+    position: absolute;
+    left: -99999999999999px;
+    
+    }
+    
+   .main-navbar li ul li:hover ul
+    {
+    left: auto;
+    margin-top: 6px;
+    position: relative;
+    left: auto;
+    }
+    
+    .main-navbar li ul
+   {
+   left:auto;
+   }
+
+    /* .second-ul li
+    {
+        width: 90%;
+        text-align: center;
+        padding-block:10px;
+       
+         
+    } */
+
+    /* ul li ul li
+    {
+    width: 90%;
+    text-align: center;
+    padding-block:10px;
+    position: absolute;
+    left: -99999999999px;
+    } */
+
+    .second-ul 
+    {
+    position: relative; 
+    text-transform: none;
+    background-color: transparent;
+    top:2px;
+    height: auto;
+    display: block;
+    gap: 5px; 
+    margin-left:15px;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 500;
+    font-size: 1.05rem;
+
+   }
+
+   ul li:hover ul li
+   {
+       background-color: transparent;
+       position: relative;
+       left: -15px;
+   }
+
+.main-navbar ul li ul
+{
+  position: relative; 
+  text-transform: none;
+  background-color:transparent;
+  border: none;
+  width: 200px;
+  height: auto;
+  display: block;
+  gap: 5px;
+  margin-top: 12px;
+  margin-bottom: -8px;
+  font-family: "Poppins", sans-serif; 
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.main-navbar ul li {
+    margin-left: 25px;
+}
+
+    .f-box-one{
+        width: 48%;
+    }
+
+    .contact-menu{
+        display: none;
+     }
+     
+     .main-navbar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        /* position: absolute; */
+    }
+
+    .menu-text-icon{
+        padding: 10px 0 10px 0;
+        text-decoration: none;
+    }
+    
+
+
+    .com-brand{
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 2rem;
+        font-weight:700;
+    }
+
+    .menu-icon-separation{
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .main-navbar, ul {
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap:0px;
+        font-family: sans-serif;
+        /* font-size: 1.05rem; */
+        font-weight: bold;   
+       
+    }
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-text-icon{
+        margin-left: 0;
+        /* margin-top: -10px; */
+    }
+
+    .material-symbols-outlined-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        box-sizing: border-box;
+        border: 1px solid #000;
+        position: absolute;
+        right: 25px;
+    }
+
+    .link-icon{
+        display: none;
+    }
+
+    .link-icon-display{
+        width: 100%;
+    }
+
+
+    .destination, .return-date, .depart-date, .duration {
+        padding: 1% 3%;
+        margin: auto;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+    }
+    
+    .btn {
+        padding: 1.1% 3%;
+        margin: auto;
+        background-color: #7AB730;
+        color: #FFFFFF;
+        border: none;
+        font-size: 1.2rem;
+    }
+
+    .Wallpaper-img{
+        top:40px;
+    }
+
+    .about-section{
+        width: 100%;
+     }
+
+    .package-about-section{
+        flex-direction: column;
+        align-items: center;
+        width: 720px;
+        height: 1180px;
+        gap: 20px;
+        
+    }
+
+    .package-subject{
+        width: 650px;
+        height: 550px;
+    }
+
+    .package-about-img{
+        width: 650px;
+        height: 550px;
+        max-width: 100%;
+        margin: auto;
+        
+    }
+
+    .about-text{
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    .about-text{
+        width: 650px;
+        height: 500px;
+    }
+
+    /* .des-explore-img{
+        width: 400px;
+    } */
+
+
+    .package-place-img{
+        flex-wrap: wrap;
+        max-width: 95%;
+    }
+
+    .sigup-box-element{
+        flex-wrap: wrap;
+        max-width: 95%;
+        gap: 40px;
+    }
+
+
+    
+}
+
+@media(max-width:875px){
+
+    /* .secvice-item-section{
+        flex-wrap: wrap;
+        max-width: 90%;
+    } */
+
+    /* .servic-div-travel{
+        width: 350px;
+        max-width: 100%;
+        background-color: #FFFFFF;
+    } */
+
+
+    .team-guide-sec{
+        position: relative;
+        z-index: 0;
+        width: 348px;
+        height: 348px;
+    }
+  
+
+  
+}
+
+@media(max-width:775px){
+    .servic-div-travel{
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .service-logo-travel{
+        width: 650px;
+        max-width: 100%;
+    }
+
+    .servic-div-blog{
+        width:650px;
+        max-width: 95%;
+    }
+
+    
+    
+}
+
+
+@media(max-width:765px){
+
+
+    .nav-wallpaper-des-box{
+        height: auto;
+        top: 90px;
+    }
+
+    .destination-box{
+        top:50px;
+        margin-bottom: 60px;
+        width: 510px;
+        height: 363px;
+        padding: 1%;
+    }
+
+    .destination-box-item{
+        flex-direction: column;
+        padding: 4% 5%;
+        gap: 25px;
+    }
+
+    .destination, .return-date, .depart-date, .duration {
+        padding: 2% 3%;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+    }
+
+    .destination-btn{
+        width: 100%;
+    }
+
+    .btn {
+        padding: 2.5% 3%;
+        margin: auto;
+        background-color: #7AB730;
+        color: #FFFFFF;
+        border: none;
+        font-size: 1.2rem;
+
+    }
+
+    .package-about-img{
+        width: 100%;
+        height: 100%;
+        max-width: 90%;
+        
+    }
+
+    .about-text{
+        max-width: 95%;
+    }
+
+    .package-subject{
+        max-width: 100%;
+    }
+
+    .about-text-content{
+        max-width: 75%;
+        margin: auto;
+        padding: 2.5rem;
+    }
+
+    .about-tex-heading{
+        font-size: 2rem;
+    }
+
+    .about-testimonial{
+        flex-direction: column;
+        max-width: 85%;
+    }
+
+    .Explore-heading{
+        font-size: 2rem;
+    }
+
+    .package-img{
+        max-width: 95%;
+        width:fit-content;
+    }
+
+    
+    .des-explore-img {
+        max-width: 95%;
+        width: 550px;
+        margin-left: 12px;
+    }
+
+    .container{
+        height: auto;
+        width: 550px;
+        max-width: 95%;
+        overflow: hidden;
+    }
+
+    .guide-img-section{
+        /* height: auto; */
+        width: 550px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .servic-div{
+        max-width: 90%;
+        width: 95%;
+    }
+
+    .package-details{
+        max-width: 95%;
+        margin: auto;
+        width: 95%;
+        position: relative;
+        top: -5px;
+        height: auto;
+        padding-bottom: 20px;
+        
+    }
+
+    .c-title{
+        font-size: 3rem;
+        width: 90%;
+    }
+    
+
+}
+
+@media(max-width:750px){
+
+    .Wallpaper-section{
+        background-image: url("../img/carousel-1.jpg");
+        /* background-position: center center; */
+        background-repeat: no-repeat;
+        /* background-attachment:fixed; */
+        background-size:cover;
+        position: relative;
+        z-index: -1;
+        /* top: -50px; */
+        height:65vh;
+    
+    }
+
+    .Next-wallpaper-img{
+        background-image: url("../img/carousel-2.jpg");
+    }
+
+    .f-box-one{
+        width: 100%;
+    }
+
+    .c-title{
+        font-size: 2.3rem;
+        width: 100%;
+    }
+
+}
+
+/* Navbar Section  */
+
+/* .com-brand{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    
+}
+
+.brand-last-2text-color{
+    color: #7AB730;
+}
+
+.navbar, ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.05rem;
+    background-color: gainsboro;
+    gap: 30px;
+    padding: 1.3%;
+    color:#212121;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.menu-text-icon:hover{
+   color: #7AB730;
+   cursor: pointer;
+}
+
+
+.tour-pack{
+    width: 140px;
+}
+
+
+
+.link-icon-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.05rem;
+    background-color:gainsboro;
+    gap: 30px;
+    padding: 1.3%;
+    color: #212121;
+    font-family: sans-serif;
+    font-weight: bold; 
+}
+
+
+
+.material-symbols-outlined{
+    display: none;
+}
+
+
+@media(max-width:975px){
+
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .com-brand{
+        margin-left: 15px;
+        
+    }
+
+    .material-symbols-outlined {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        box-sizing: border-box;
+        border: 1px solid white;
+        position: absolute;
+        right: 30px;
+    }
+
+    .navbar,ul{
+        flex-direction: column;
+        align-items: start;
+        gap:20px;
+    }
+
+    .material-symbols-outlined{
+        display: flex;
+    }
+
+    .link-icon{
+        display: none;
+    }
+
+    .link-icon-display{
+        margin-left: 35px;
+        margin-top: -20px;
+    }
+} */
+

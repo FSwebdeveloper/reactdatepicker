@@ -1,0 +1,10 @@
+{
+    "folder-customization.folders": [
+        {
+            "path": "my-app\\src\\"
+        },
+        {
+            "path": "my-app\\src\\Components\\Service\\"
+        }
+    ]
+}
