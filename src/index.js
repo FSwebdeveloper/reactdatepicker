@@ -14,6 +14,7 @@ import Tourpage from './Components/Package/Tourpage';
 import Contactpage from './Components/Header/Contactpage';
 import Andamantour from './Components/Header/andamantour';
 import Sundarbantour from './Components/Header/Sundarbantou';
+import Kashmirtour from './Components/Header/Kashmirtour';
 
 
 
@@ -29,6 +30,7 @@ root.render(
       <Route path="/contact" element={<Contactpage/>}/>
       <Route path="/andamantour" element={<Andamantour/>}/>
       <Route path="/sundarbantour" element={<Sundarbantour/>}/>
+      <Route path="/kashmirtour" element={<Kashmirtour/>}/>
     </Routes>
   </Router>
   </div>

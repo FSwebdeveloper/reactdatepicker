@@ -525,6 +525,7 @@
         max-width: 75%;
         margin: auto;
         padding: 2.5rem;
+        
     }
 
     .about-tex-heading{
@@ -586,11 +587,19 @@
         font-size: 3rem;
         width: 90%;
     }
+
+    .about-tes-section {
+        margin-top: 50px;
+    }
     
 
 }
 
 @media(max-width:750px){
+
+    #loading{
+        background-size: 80%;
+    }  
 
     .Wallpaper-section{
         background-image: url("../img/carousel-1.jpg");
