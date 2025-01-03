@@ -36,7 +36,7 @@ const DropdownTwo = () => {
                     </ul> */}
                     
                 </li>
-                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/">Dropdown Menu</NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/shimlamanalitour">Shimla Manali Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/">Dropdown Menu</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/">Dropdown Menu</NavLink></li>
         </ul>
