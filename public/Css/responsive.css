@@ -629,6 +629,18 @@
 
 }
 
+@media(max-width:450px){
+
+    .Explore-heading{
+        font-size: 1.7rem;
+    }
+
+    .about-tex-heading {
+        font-size: 1.8rem;
+    }
+    
+}
+
 /* Navbar Section  */
 
 /* .com-brand{
