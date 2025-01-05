@@ -716,7 +716,7 @@ body {
     height: 120px;
     margin: auto;
     max-width: 90%;
-    z-index: 9;
+    z-index: 0;
     position: relative;
     top: 0px;
 }

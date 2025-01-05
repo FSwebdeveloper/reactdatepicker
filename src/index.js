@@ -18,6 +18,8 @@ import Kashmirtour from './Components/Header/Kashmirtour';
 import Shimlamanalitour from './Components/Header/Shimlamanalitour';
 import Sikkimdarjeelingtour from './Components/Header/Sikkimdarjeelingtour';
 import Kalimpongdarjeelingtour from './Components/Header/Kalimpongdarjeelingtour';
+import Chennai from './Components/Header/Chennai';
+import Northsikkimtour from './Components/Header/Northsikkimtour';
 
 
 
@@ -37,6 +39,8 @@ root.render(
       <Route path="/shimlamanalitour" element={<Shimlamanalitour/>}/>
       <Route path="/sikkimdarjeelingtour" element={<Sikkimdarjeelingtour/>}/>
       <Route path="/kalimpongdarjeelingtour" element={<Kalimpongdarjeelingtour/>}/>
+      <Route path="/chennaitour" element={<Chennai/>}/>
+      <Route path="/northsikkimtour" element={<Northsikkimtour/>}/>
     </Routes>
   </Router>
   </div>

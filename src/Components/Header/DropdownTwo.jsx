@@ -38,9 +38,11 @@ const DropdownTwo = () => {
                 </li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/shimlamanalitour">Shimla Manali Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/sikkimdarjeelingtour">Sikkim D Tour</NavLink></li>
-                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/kalimpongdarjeelingtour">Kalimpong D Tour </NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/kalimpongdarjeelingtour">Kalimpong D Tour</NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/chennaitour">Chennai Tour</NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/northsikkimtour">North Sikkim Tour</NavLink></li>
+                
         </ul>
-        
         </li>
         <li class="menu-text-icon"><NavLink className={(e)=> {return e.isActive? "red" : "menu-text-icon"}} to="/tourpage">Tour Package</NavLink></li>
         <li class="menu-text-icon"><NavLink className={(e)=> {return e.isActive? "red" : "menu-text-icon"}} to="/contact">Contact</NavLink></li>

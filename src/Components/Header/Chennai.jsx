@@ -6,14 +6,13 @@ import Navbar from './Navbar';
 import Footer from '../Footer/Footer';
 import Itdown from './Itdown';
 import Itincluding from './Itinclude';
-import kinclude from './kinclude';
-import kalimpondIt from './kalimpongdIt';
+import chennaiIt from './chennaiIt';
+import cinclude from './cinclude';
 
-const Kalimpongdarjeelingtour = () => {
+const Chennai = () => {
 
   const [selectedDate, setDate] = useState(null);
   const [selectedReturnDate, returnSetDate] = useState(null);
-
   return (
     <div>
       <Contact/>
@@ -24,7 +23,7 @@ const Kalimpongdarjeelingtour = () => {
       <div className='nav-icon-wallpaper'>
         <div className='c-text-heading'>
           {/* <h5 className='c-about'>Tours & Travel</h5> */}
-         <h1 className='c-title nav-icon-page'>Kalimpong Darjeeling Tour</h1>
+         <h1 className='c-title nav-icon-page'>Chennai Tour</h1>
          {/* <button className='carousel-btn' type='submit'>Book Now</button> */}
         </div>
       </div>
@@ -58,7 +57,7 @@ const Kalimpongdarjeelingtour = () => {
       <div className='destination-box-section'>
       <div className='Explore-section'>
        <h5 className='destination-title'>4Night 5Days</h5>
-       <h1 className='Explore-heading'>Kalimpong Darjeeling Tour Package</h1>
+       <h1 className='Explore-heading'>Chennai Tour Package</h1>
        </div>
       {/* <div className='andaman-section'>
       <img className='andaman-img' src='https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
@@ -88,14 +87,14 @@ const Kalimpongdarjeelingtour = () => {
 
       <div className='andaman-section'>
       <div className='andaman-sec-img'>
-      <img className='andaman-img' src='https://images.unsplash.com/photo-1636294733820-ac04c70aecc7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
+      <img className='andaman-img' src='https://images.unsplash.com/photo-1629913801617-bda1ee522560?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
       </div>
       <div className='package-detail'>
       <div className='price-tag'>
        <div className='price-tag-sec'>
        <p className='get-quote-content-title price-basic'>Starting from</p>
        <div className='price-pax'>
-       <p className='get-quote-content price-pax-sec'>₹ 6,999</p>
+       <p className='get-quote-content price-pax-sec'>₹ 13,999</p>
        <p className='get-quote-content per-person-sec'>Per Person</p>
        </div>
        </div>
@@ -103,8 +102,8 @@ const Kalimpongdarjeelingtour = () => {
 
       <div className='get-quote'>
       <p className='get-quote-content-title'>Tour Details</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Kalimpong Darjeeling</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i> Duration: 4 Nights 5 Days</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Chennai</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i> Duration: 3 Nights 4 Days</p>
       
       <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i> Ex: Kolkata</p>
       <div>
@@ -116,12 +115,12 @@ const Kalimpongdarjeelingtour = () => {
       </div>
       
       <div className='Itinerary-heading'>
-      <h1 className='I-heading I-heading-policy'>5Days Kalimpong Darjeeling Tour Itinerary</h1>
+      <h1 className='I-heading I-heading-policy'>4Days Chennai Tour Itinerary</h1>
       </div>
       
       <div className='Itdown-section'>
       {
-                    kalimpondIt.map(questionItem => {
+                    chennaiIt.map(questionItem => {
                         return (
                             <Itdown
                                 id={questionItem.id}
@@ -170,7 +169,7 @@ const Kalimpongdarjeelingtour = () => {
       
       <div className='Itdown-section'>
       {
-                    kinclude.map(questionItem => {
+                    cinclude.map(questionItem => {
                         return (
                             <Itincluding
                                 id={questionItem.id}
@@ -209,4 +208,4 @@ const Kalimpongdarjeelingtour = () => {
   )
 }
 
-export default Kalimpongdarjeelingtour;
+export default Chennai;
