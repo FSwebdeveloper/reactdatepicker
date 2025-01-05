@@ -37,8 +37,8 @@ const DropdownTwo = () => {
                     
                 </li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/shimlamanalitour">Shimla Manali Tour</NavLink></li>
-                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/">Dropdown Menu</NavLink></li>
-                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/">Dropdown Menu</NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/sikkimdarjeelingtour">Sikkim D Tour</NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/kalimpongdarjeelingtour">Kalimpong D Tour </NavLink></li>
         </ul>
         
         </li>

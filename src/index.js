@@ -16,6 +16,8 @@ import Andamantour from './Components/Header/andamantour';
 import Sundarbantour from './Components/Header/Sundarbantou';
 import Kashmirtour from './Components/Header/Kashmirtour';
 import Shimlamanalitour from './Components/Header/Shimlamanalitour';
+import Sikkimdarjeelingtour from './Components/Header/Sikkimdarjeelingtour';
+import Kalimpongdarjeelingtour from './Components/Header/Kalimpongdarjeelingtour';
 
 
 
@@ -33,6 +35,8 @@ root.render(
       <Route path="/sundarbantour" element={<Sundarbantour/>}/>
       <Route path="/kashmirtour" element={<Kashmirtour/>}/>
       <Route path="/shimlamanalitour" element={<Shimlamanalitour/>}/>
+      <Route path="/sikkimdarjeelingtour" element={<Sikkimdarjeelingtour/>}/>
+      <Route path="/kalimpongdarjeelingtour" element={<Kalimpongdarjeelingtour/>}/>
     </Routes>
   </Router>
   </div>
