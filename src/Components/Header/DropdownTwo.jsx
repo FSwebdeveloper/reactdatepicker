@@ -41,7 +41,8 @@ const DropdownTwo = () => {
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/kalimpongdarjeelingtour">Kalimpong D Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/chennaitour">Chennai Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/northsikkimtour">North Sikkim Tour</NavLink></li>
-                
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/thailandtour">Thailand Tour</NavLink></li>
+
         </ul>
         </li>
         <li class="menu-text-icon"><NavLink className={(e)=> {return e.isActive? "red" : "menu-text-icon"}} to="/tourpage">Tour Package</NavLink></li>
@@ -52,4 +53,4 @@ const DropdownTwo = () => {
   )
 }
 
-export default DropdownTwo
+export default DropdownTwo;
