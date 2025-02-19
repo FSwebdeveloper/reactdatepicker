@@ -5,8 +5,8 @@ const Contact = () => {
     <div className='contact-bg'>
       <div className='contact-menu'>
         <div className='contact-icon'>
-        <p> <i class="fa-sharp fa-solid fa-envelope"></i> ambergoo@yahoo.com</p> |
-          <p> <i class="fa-solid fa-phone"></i> +7031130622</p>
+        <p> <i class="fa-sharp fa-solid fa-envelope"></i> myfreshairtrip@gmail.com</p> |
+          <p> <i class="fa-solid fa-phone"></i> +917031130622</p>
         </div>
         <div className='social-icon'>
                 <li className='social-icon-link'><i class="fa-brands fa-facebook-f"></i></li>

@@ -22,7 +22,7 @@ const Footer = () => {
   <div className='footer-box'>
    <div className='footer-sec-content'>
    <div className='f-box-one'>
-   <h1 className="com-brand company-brand-invert">Amber<span className="brand-last-2text-color">goo</span></h1>
+   <h1 className="com-brand company-brand-invert">Xplori<span className="brand-last-2text-color">go</span></h1>
    <p className='f-about'>
    Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor
    </p>
@@ -74,8 +74,8 @@ const Footer = () => {
    <h5 className='follow-content f-content-title'>Contact Us</h5>
       <div className='services-link'>
       <p><i class="fa-solid contact-us-icon fa-location-dot"></i> H.N Road, Cooch Behar</p>
-          <p> <i class="fa-solid contact-us-icon  fa-phone"></i> +7031130622</p>
-          <p> <i class="fa-sharp  contact-us-icon  fa-solid fa-envelope"></i> ambergoo@yahoo.com</p>
+          <p> <i class="fa-solid contact-us-icon  fa-phone"></i> +917031130622</p>
+          <p> <i class="fa-sharp  contact-us-icon  fa-solid fa-envelope"></i> myfreshairtrip@gmail.com</p>
           <h5 className='follow-content f-content-title news-letter-title'>NewsLetter</h5>
           <div className='mini-signup-sec'>
            <input className='mini-signup' type='email' placeholder='Your Email'/>
