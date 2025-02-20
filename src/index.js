@@ -21,6 +21,7 @@ import Kalimpongdarjeelingtour from './Components/Header/Kalimpongdarjeelingtour
 import Chennai from './Components/Header/Chennai';
 import Northsikkimtour from './Components/Header/Northsikkimtour';
 import Thailandtour from './Components/Header/Thailandtour';
+import Darjeelingtour from './Components/Header/darjeelingtour';
 
 
 
@@ -43,6 +44,7 @@ root.render(
       <Route path="/chennaitour" element={<Chennai/>}/>
       <Route path="/northsikkimtour" element={<Northsikkimtour/>}/>
       <Route path="/thailandtour" element={<Thailandtour/>}/>
+      <Route path="/darjeelingtour" element={<Darjeelingtour/>}/>
     </Routes>
   </Router>
   </div>

@@ -23,6 +23,7 @@ const DropdownTwo = () => {
         <ul> 
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/andamantour">Andaman Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/sundarbantour">Sundarban Tour</NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/darjeelingtour">Darjeeling Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/kashmirtour"  onClick={()=> setLink(!link)}>Kashmir Tour</NavLink>
                     
                     {/* {link === false ? <i class="fa-solid fa-caret-up drop-down-symbol"> </i> : <i class="fa-solid fa-caret-down drop-down-symbol"></i>} */}
