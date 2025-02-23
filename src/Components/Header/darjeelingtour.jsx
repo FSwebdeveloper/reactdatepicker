@@ -97,7 +97,7 @@ const Darjeelingtour = () => {
        <div className='price-tag-sec'>
        <p className='get-quote-content-title price-basic'>Starting from</p>
        <div className='price-pax'>
-       <p className='get-quote-content price-pax-sec'>₹ 5,999</p>
+       <p className='get-quote-content price-pax-sec'>₹ 4,999</p>
        <p className='get-quote-content per-person-sec'>Per Person</p>
        </div>
        </div>
