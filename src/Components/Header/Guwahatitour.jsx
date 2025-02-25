@@ -6,12 +6,12 @@ import Navbar from './Navbar';
 import Footer from '../Footer/Footer';
 import Itdown from './Itdown';
 import Itincluding from './Itinclude';
-import darjeelingIt from './darjeelingIt';
-import dinclude from './dinclude';
+import guwahatiIt from './guwahatiIt';
+import ginclude from './ginclude';
 
-const Darjeelingtour = () => {
-
- const [selectedDate, setDate] = useState(null);
+const Guwahatitour = () => {
+    
+  const [selectedDate, setDate] = useState(null);
   const [selectedReturnDate, returnSetDate] = useState(null);
 
   return (
@@ -24,7 +24,7 @@ const Darjeelingtour = () => {
       <div className='nav-icon-wallpaper'>
         <div className='c-text-heading'>
           {/* <h5 className='c-about'>Tours & Travel</h5> */}
-         <h1 className='c-title nav-icon-page'>Darjeeling Tour</h1>
+         <h1 className='c-title nav-icon-page'>Guwahati Tour</h1>
          {/* <button className='carousel-btn' type='submit'>Book Now</button> */}
         </div>
       </div>
@@ -57,8 +57,8 @@ const Darjeelingtour = () => {
       </div>
       <div className='destination-box-section'>
       <div className='Explore-section'>
-       <h5 className='destination-title'>2Night 3Days</h5>
-       <h1 className='Explore-heading'>Darjeeling Tour Package</h1>
+       <h5 className='destination-title'>3Night 4Days</h5>
+       <h1 className='Explore-heading'>Guwahati Tour Package</h1>
        </div>
       {/* <div className='andaman-section'>
       <img className='andaman-img' src='https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
@@ -88,14 +88,14 @@ const Darjeelingtour = () => {
 
       <div className='andaman-section'>
       <div className='andaman-sec-img'>
-      <img className='andaman-img' src='https://siliguritourism.com/wp-content/uploads/2024/01/Darjeeling-West-Bengal-1024x576.jpg' alt=''/>
+      <img className='andaman-img' src='https://images.unsplash.com/photo-1550647581-71f8afffad65?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
       </div>
       <div className='package-detail'>
       <div className='price-tag'>
        <div className='price-tag-sec'>
        <p className='get-quote-content-title price-basic'>Starting from</p>
        <div className='price-pax'>
-       <p className='get-quote-content price-pax-sec'>₹ 4,999</p>
+       <p className='get-quote-content price-pax-sec'>₹ 8,999</p>
        <p className='get-quote-content per-person-sec'>Per Person</p>
        </div>
        </div>
@@ -103,8 +103,8 @@ const Darjeelingtour = () => {
 
       <div className='get-quote'>
       <p className='get-quote-content-title'>Tour Details</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Darjeeling</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i> Duration: 2 Nights 3 Days</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Guwahati</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i> Duration: 3 Nights 4 Days</p>
       
       <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i> Ex: Siliguri</p>
       <div>
@@ -116,12 +116,12 @@ const Darjeelingtour = () => {
       </div>
       
       <div className='Itinerary-heading'>
-      <h1 className='I-heading I-heading-policy'>3Days Darjeeling Tour Itinerary</h1>
+      <h1 className='I-heading I-heading-policy'>4Days Guwahati Tour Itinerary</h1>
       </div>
       
       <div className='Itdown-section'>
       {
-                    darjeelingIt.map(questionItem => {
+                    guwahatiIt.map(questionItem => {
                         return (
                             <Itdown
                                 id={questionItem.id}
@@ -170,7 +170,7 @@ const Darjeelingtour = () => {
       
       <div className='Itdown-section'>
       {
-                    dinclude.map(questionItem => {
+                    ginclude.map(questionItem => {
                         return (
                             <Itincluding
                                 id={questionItem.id}
@@ -206,8 +206,7 @@ const Darjeelingtour = () => {
       </div>
     <Footer/>
     </div>
-    
   )
 }
 
-export default Darjeelingtour;
+export default Guwahatitour;
