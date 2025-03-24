@@ -101,7 +101,7 @@ const Darjeelingtour = () => {
        <div className='price-tag-sec'>
        <p className='get-quote-content-title price-basic'>Starting from</p>
        <div className='price-pax'>
-       <p className='get-quote-content price-pax-sec'>₹ 8,999</p>
+       <p className='get-quote-content price-pax-sec'>₹ 4,999</p>
        <p className='get-quote-content per-person-sec'>Per Person</p>
        </div>
        </div>
@@ -109,8 +109,8 @@ const Darjeelingtour = () => {
 
       <div className='get-quote'>
       <p className='get-quote-content-title'>Tour Details</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Guwahati</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i>Duration: 3 Nights 4 Days</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Darjeeling</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i>Duration: 2 Nights 3 Days</p>
       
       <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i>Ex: Siliguri</p>
       
