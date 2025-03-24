@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import React, { useState, useEffect} from 'react'
 import Contact from './Contact';
 import Navbar from './Navbar';
 import Footer from '../Footer/Footer';
@@ -8,14 +6,32 @@ import Itdown from './Itdown';
 import Itincluding from './Itinclude';
 import guwahatiIt from './guwahatiIt';
 import ginclude from './ginclude';
+import Submitfrom from '../Popup/Submitfrom';
+import Aboutsection from '../Abouts/Aboutsection';
 
 const Guwahatitour = () => {
     
-  const [selectedDate, setDate] = useState(null);
-  const [selectedReturnDate, returnSetDate] = useState(null);
+
+  
+  const [popUp, setPopUp] = useState(false);
+
+  useEffect(() => {
+    // Disable scroll when modal is open
+    if (popUp) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      // Re-enable scroll when modal is closed
+      document.body.style.overflowY = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflowY = 'auto';
+    };
+  }, [popUp]);
 
   return (
     <div>
+    
       <Contact/>
       <Navbar/>
       <div className='slider'>
@@ -31,35 +47,19 @@ const Guwahatitour = () => {
     </div>
     </div>
     <div className='about-section'>
-    <div>
-      <div className='nav-wallpaper-des-box'>
-      <div className='destination-box-item'>
-      <div className='destination'>
-        <p>Destination</p>
-      </div>
-      <div className='depart-date'>
-        <DatePicker className='date-picker-input' placeholderText='Depart Date' selected={selectedDate} onChange={date=>setDate(date)}/>
-      </div>
-      <div className='return-date'>
-        <DatePicker className='date-picker-input' placeholderText='Return Date' selected={selectedReturnDate} onChange={date=>returnSetDate(date)}/>
-      </div>
-      <div className='duration'>
-        <p>Duration</p>
-      </div>
-      <button className='btn destination-btn' type='submit'>Submit</button>
-      </div>
-      </div>
-    </div>
+    <Aboutsection/>
     </div>
     {/* <Destination/> */}
     <div className='Extra-support'>
 
       </div>
+      
       <div className='destination-box-section'>
       <div className='Explore-section'>
        <h5 className='destination-title'>3Night 4Days</h5>
        <h1 className='Explore-heading'>Guwahati Tour Package</h1>
        </div>
+       
       {/* <div className='andaman-section'>
       <img className='andaman-img' src='https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
       <div className='price-tag-quote'>
@@ -85,10 +85,21 @@ const Guwahatitour = () => {
       </div>
       </div>
       </div> */}
+      {/* <Popup/> */}
+
+      {/* Quote Function */}
+
+      <div className={popUp === true ? "opacity" : "opacity-none"}></div>
+      <div className={popUp === false ? "sign-destination-box-item-close" : "sign-destination-box-item-popup" }>
+      {/* <div className='sign-destination'>
+      </div> */}
+      <i class="fa fa-window-close" aria-hidden="true" onClick={()=> setPopUp(false)}></i>
+      <Submitfrom/>
+      </div>
 
       <div className='andaman-section'>
       <div className='andaman-sec-img'>
-      <img className='andaman-img' src='https://media.holidify.com/images/cmsuploads/compressed/Krang-Suri-Falls_20240322150902.jpg' alt=''/>
+      <img className='andaman-img' src="https://media.holidify.com/images/cmsuploads/compressed/Krang-Suri-Falls_20240322150902.jpg" alt=''/>
       </div>
       <div className='package-detail'>
       <div className='price-tag'>
@@ -104,16 +115,19 @@ const Guwahatitour = () => {
       <div className='get-quote'>
       <p className='get-quote-content-title'>Tour Details</p>
       <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Guwahati</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i> Duration: 3 Nights 4 Days</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i>Duration: 3 Nights 4 Days</p>
       
-      <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i> Ex: Siliguri</p>
-      <div>
-      <div className='sign-destination-btn quote-btn' type='submit'> <img className='call-gif' src='https://i.pinimg.com/originals/68/85/87/688587d89bcaad9109cda401fed39b66.gif' alt=''/>Get a FREE Quote</div>
+      <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i>Ex: Siliguri</p>
+      
+      <div onClick={()=> setPopUp(true)}>
+      <div className='sign-destination-btn quote-btn' type='submit'> <img className='call-gif' src='https://i.pinimg.com/originals/68/85/87/688587d89bcaad9109cda401fed39b66.gif' alt='' />Get a FREE Quote</div>
       </div>
 
       </div>
       </div>
       </div>
+
+      {/* Quote Function */}
       
       <div className='Itinerary-heading'>
       <h1 className='I-heading I-heading-policy'>4Days Guwahati Tour Itinerary</h1>

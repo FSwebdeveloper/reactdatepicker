@@ -23,6 +23,8 @@ import Northsikkimtour from './Components/Header/Northsikkimtour';
 import Thailandtour from './Components/Header/Thailandtour';
 import Darjeelingtour from './Components/Header/darjeelingtour';
 import Guwahatitour from './Components/Header/Guwahatitour';
+import Silkroutetour from './Components/Header/Silkroutetour';
+
 
 
 
@@ -47,6 +49,7 @@ root.render(
       <Route path="/thailandtour" element={<Thailandtour/>}/>
       <Route path="/darjeelingtour" element={<Darjeelingtour/>}/>
       <Route path="/guwahatitour" element={<Guwahatitour/>}/>
+      <Route path="/silkroutetour" element={<Silkroutetour/>}/>
     </Routes>
   </Router>
   </div>

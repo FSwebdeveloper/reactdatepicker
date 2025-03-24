@@ -4,12 +4,12 @@ import Navbar from './Navbar';
 import Footer from '../Footer/Footer';
 import Itdown from './Itdown';
 import Itincluding from './Itinclude';
-import kinclude from './kinclude';
-import kalimpondIt from './kalimpongdIt';
 import Aboutsection from '../Abouts/Aboutsection';
 import Submitfrom from '../Popup/Submitfrom';
+import silkinclude from './silkinclude';
+import silktourIt from './silktourIt';
 
-const Kalimpongdarjeelingtour = () => {
+const Silkroutetour = () => {
 
   const [popUp, setPopUp] = useState(false);
 
@@ -27,6 +27,7 @@ const Kalimpongdarjeelingtour = () => {
     };
   }, [popUp]);
 
+
   return (
     <div>
       <Contact/>
@@ -37,7 +38,7 @@ const Kalimpongdarjeelingtour = () => {
       <div className='nav-icon-wallpaper'>
         <div className='c-text-heading'>
           {/* <h5 className='c-about'>Tours & Travel</h5> */}
-         <h1 className='c-title nav-icon-page'>Kalimpong Darjeeling Tour</h1>
+         <h1 className='c-title nav-icon-page'>Silk Route Tour</h1>
          {/* <button className='carousel-btn' type='submit'>Book Now</button> */}
         </div>
       </div>
@@ -52,8 +53,8 @@ const Kalimpongdarjeelingtour = () => {
       </div>
       <div className='destination-box-section'>
       <div className='Explore-section'>
-       <h5 className='destination-title'>4Night 5Days</h5>
-       <h1 className='Explore-heading'>Kalimpong Darjeeling Tour Package</h1>
+       <h5 className='destination-title'>3Night 4Days</h5>
+       <h1 className='Explore-heading'>Silk Route Tour Package</h1>
        </div>
       {/* <div className='andaman-section'>
       <img className='andaman-img' src='https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
@@ -81,7 +82,6 @@ const Kalimpongdarjeelingtour = () => {
       </div>
       </div> */}
 
-
       {/* Quote Function */}
       
       <div className={popUp === true ? "opacity" : "opacity-none"}></div>
@@ -94,14 +94,14 @@ const Kalimpongdarjeelingtour = () => {
 
       <div className='andaman-section'>
       <div className='andaman-sec-img'>
-      <img className='andaman-img' src="https://images.unsplash.com/photo-1636294733820-ac04c70aecc7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=''/>
+      <img className='andaman-img' src="https://images.unsplash.com/photo-1554039363-bb1ab89fc855?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=''/>
       </div>
       <div className='package-detail'>
       <div className='price-tag'>
        <div className='price-tag-sec'>
        <p className='get-quote-content-title price-basic'>Starting from</p>
        <div className='price-pax'>
-       <p className='get-quote-content price-pax-sec'>₹ 8,999</p>
+       <p className='get-quote-content price-pax-sec'>₹ 6,999</p>
        <p className='get-quote-content per-person-sec'>Per Person</p>
        </div>
        </div>
@@ -109,7 +109,7 @@ const Kalimpongdarjeelingtour = () => {
 
       <div className='get-quote'>
       <p className='get-quote-content-title'>Tour Details</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Guwahati</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Silk Route</p>
       <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i>Duration: 3 Nights 4 Days</p>
       
       <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i>Ex: Siliguri</p>
@@ -126,14 +126,14 @@ const Kalimpongdarjeelingtour = () => {
 
       {/* <div className='andaman-section'>
       <div className='andaman-sec-img'>
-      <img className='andaman-img' src='https://images.unsplash.com/photo-1636294733820-ac04c70aecc7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
+      <img className='andaman-img' src='https://plus.unsplash.com/premium_photo-1697730418140-064a5b6c2e17?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
       </div>
       <div className='package-detail'>
       <div className='price-tag'>
        <div className='price-tag-sec'>
        <p className='get-quote-content-title price-basic'>Starting from</p>
        <div className='price-pax'>
-       <p className='get-quote-content price-pax-sec'>₹ 6,999</p>
+       <p className='get-quote-content price-pax-sec'>₹ 7,499</p>
        <p className='get-quote-content per-person-sec'>Per Person</p>
        </div>
        </div>
@@ -141,7 +141,7 @@ const Kalimpongdarjeelingtour = () => {
 
       <div className='get-quote'>
       <p className='get-quote-content-title'>Tour Details</p>
-      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Kalimpong Darjeeling</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Silk Route </p>
       <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i> Duration: 4 Nights 5 Days</p>
       
       <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i> Ex: Kolkata</p>
@@ -154,12 +154,12 @@ const Kalimpongdarjeelingtour = () => {
       </div> */}
       
       <div className='Itinerary-heading'>
-      <h1 className='I-heading I-heading-policy'>5Days Kalimpong Darjeeling Tour Itinerary</h1>
+      <h1 className='I-heading I-heading-policy'>4Days Silk Route Tour Itinerary</h1>
       </div>
       
       <div className='Itdown-section'>
       {
-                    kalimpondIt.map(questionItem => {
+                    silktourIt.map(questionItem => {
                         return (
                             <Itdown
                                 id={questionItem.id}
@@ -208,7 +208,7 @@ const Kalimpongdarjeelingtour = () => {
       
       <div className='Itdown-section'>
       {
-                    kinclude.map(questionItem => {
+                    silkinclude.map(questionItem => {
                         return (
                             <Itincluding
                                 id={questionItem.id}
@@ -247,4 +247,4 @@ const Kalimpongdarjeelingtour = () => {
   )
 }
 
-export default Kalimpongdarjeelingtour;
+export default Silkroutetour;

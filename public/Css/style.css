@@ -4,6 +4,61 @@
     list-style: none;
 }
 
+/* Popup  */
+
+/* .opacity-none{
+    display: none;
+} */
+
+.opacity{
+    background: #000;
+    height:100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.sign-destination-box-item-popup {
+    flex-direction: column;
+    padding: 2% 3%;
+    gap: 25px;
+    position: fixed;
+    z-index: 10;
+    width: 71.5%;
+    min-height: 300px;
+    background: #fff;
+    margin: auto;
+    left: -5px;
+    right: 0;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+    overflow-y: scroll;
+    top: 15px;
+    
+}
+
+.fa-rectangle-times, .fa-rectangle-xmark, .fa-times-rectangle, .fa-window-close {
+    --fa: "\f410";
+    font-size: 2.3rem;
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    top: 0;
+    color:#7AB730;
+    margin-top: -0.1rem;
+}
+
+.fa-window-close:hover{
+    cursor: pointer;
+    color: #527A20;
+}
 
  /* Andaman Page */
 
@@ -171,7 +226,7 @@ button:hover{
     /* height: 120px; */
     margin: auto;
     max-width: 95%;
-    z-index: 9;
+    z-index: 0;
     position: relative;
     top: 0px;
     gap: 15px;
@@ -573,6 +628,9 @@ body {
    cursor: pointer;
 }
 
+.sign-destination-box-item-close{
+    display: none;
+}
 
 /* Navbar Section  */
 
@@ -1377,7 +1435,7 @@ body {
 }
 
 .sign-destination, .sign-return-date, .sign-depart-date, .sign-duration {
-    padding: 2% 3%;
+    padding: 1.2% 2%;
     margin: auto;
     width: 100%;
     max-width: 100%;
@@ -1392,7 +1450,7 @@ body {
 }
 
 .sign-btn {
-    padding: 3.5% 3%;
+    padding: 2% 3%;
     margin: auto;
     background-color: #7AB730;
     color: #FFFFFF;

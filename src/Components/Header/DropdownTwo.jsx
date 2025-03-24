@@ -23,6 +23,7 @@ const DropdownTwo = () => {
         <ul> 
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/andamantour">Andaman Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/sundarbantour">Sundarban Tour</NavLink></li>
+                <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/silkroutetour">Silkroute Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/darjeelingtour">Darjeeling Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/guwahatitour">Guwahati Tour</NavLink></li>
                 <li className={dropDown === true ? "drop-down" : "dropdown-display"}><NavLink to="/kashmirtour"  onClick={()=> setLink(!link)}>Kashmir Tour</NavLink>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Submitemail from './Submitemail';
 // import pservice from './pservice';
 // import Contentpart from './Content-part';
 
@@ -77,10 +78,7 @@ const Footer = () => {
           <p> <i class="fa-solid contact-us-icon  fa-phone"></i> +917031130622</p>
           <p> <i class="fa-sharp  contact-us-icon  fa-solid fa-envelope"></i> myfreshairtrip@gmail.com</p>
           <h5 className='follow-content f-content-title news-letter-title'>NewsLetter</h5>
-          <div className='mini-signup-sec'>
-           <input className='mini-signup' type='email' placeholder='Your Email'/>
-           <button className='mini-btn' type="submit">Sign Up</button>
-          </div>
+          <Submitemail/>
       </div>
    </div>
     

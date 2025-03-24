@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import React, {useState, useEffect} from 'react'
 import Contact from './Contact';
 import Navbar from './Navbar';
 import Footer from '../Footer/Footer';
@@ -8,11 +6,28 @@ import Itdown from './Itdown';
 import Itincluding from './Itinclude';
 import chennaiIt from './chennaiIt';
 import cinclude from './cinclude';
+import Aboutsection from '../Abouts/Aboutsection';
+import Submitfrom from '../Popup/Submitfrom';
 
 const Chennai = () => {
 
-  const [selectedDate, setDate] = useState(null);
-  const [selectedReturnDate, returnSetDate] = useState(null);
+  const [popUp, setPopUp] = useState(false);
+
+  useEffect(() => {
+    // Disable scroll when modal is open
+    if (popUp) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      // Re-enable scroll when modal is closed
+      document.body.style.overflowY = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflowY = 'auto';
+    };
+  }, [popUp]);
+
+
   return (
     <div>
       <Contact/>
@@ -30,25 +45,7 @@ const Chennai = () => {
     </div>
     </div>
     <div className='about-section'>
-    <div>
-      <div className='nav-wallpaper-des-box'>
-      <div className='destination-box-item'>
-      <div className='destination'>
-        <p>Destination</p>
-      </div>
-      <div className='depart-date'>
-        <DatePicker className='date-picker-input' placeholderText='Depart Date' selected={selectedDate} onChange={date=>setDate(date)}/>
-      </div>
-      <div className='return-date'>
-        <DatePicker className='date-picker-input' placeholderText='Return Date' selected={selectedReturnDate} onChange={date=>returnSetDate(date)}/>
-      </div>
-      <div className='duration'>
-        <p>Duration</p>
-      </div>
-      <button className='btn destination-btn' type='submit'>Submit</button>
-      </div>
-      </div>
-    </div>
+    <Aboutsection/>
     </div>
     {/* <Destination/> */}
     <div className='Extra-support'>
@@ -85,7 +82,49 @@ const Chennai = () => {
       </div>
       </div> */}
 
+      {/* Quote Function */}
+
+      <div className={popUp === true ? "opacity" : "opacity-none"}></div>
+      <div className={popUp === false ? "sign-destination-box-item-close" : "sign-destination-box-item-popup" }>
+      {/* <div className='sign-destination'>
+      </div> */}
+      <i class="fa fa-window-close" aria-hidden="true" onClick={()=> setPopUp(false)}></i>
+      <Submitfrom/>
+      </div>
+
       <div className='andaman-section'>
+      <div className='andaman-sec-img'>
+      <img className='andaman-img' src="https://images.unsplash.com/photo-1629913801617-bda1ee522560?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=''/>
+      </div>
+      <div className='package-detail'>
+      <div className='price-tag'>
+       <div className='price-tag-sec'>
+       <p className='get-quote-content-title price-basic'>Starting from</p>
+       <div className='price-pax'>
+       <p className='get-quote-content price-pax-sec'>₹ 8,999</p>
+       <p className='get-quote-content per-person-sec'>Per Person</p>
+       </div>
+       </div>
+      </div>
+
+      <div className='get-quote'>
+      <p className='get-quote-content-title'>Tour Details</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-location-dot"></i> Destination: Guwahati</p>
+      <p className='get-quote-content'><i class="fa-solid package-icon-color fa-calendar-days"></i>Duration: 3 Nights 4 Days</p>
+      
+      <p className='get-quote-content get-quote-content-ex'> <i class="fa-solid package-icon-color fa-right-left"></i>Ex: Siliguri</p>
+      
+      <div onClick={()=> setPopUp(true)}>
+      <div className='sign-destination-btn quote-btn' type='submit'> <img className='call-gif' src='https://i.pinimg.com/originals/68/85/87/688587d89bcaad9109cda401fed39b66.gif' alt='' />Get a FREE Quote</div>
+      </div>
+
+      </div>
+      </div>
+      </div>
+
+      {/* Quote Function */}
+
+      {/* <div className='andaman-section'>
       <div className='andaman-sec-img'>
       <img className='andaman-img' src='https://images.unsplash.com/photo-1629913801617-bda1ee522560?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt=''/>
       </div>
@@ -112,7 +151,7 @@ const Chennai = () => {
 
       </div>
       </div>
-      </div>
+      </div> */}
       
       <div className='Itinerary-heading'>
       <h1 className='I-heading I-heading-policy'>4Days Chennai Tour Itinerary</h1>
