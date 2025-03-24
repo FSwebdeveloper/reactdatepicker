@@ -417,6 +417,10 @@
 
 @media(max-width:875px){
 
+    .sign-destination-box-item-popup {
+        width: 90%;
+    }
+
     /* .secvice-item-section{
         flex-wrap: wrap;
         max-width: 90%;
@@ -599,7 +603,9 @@
 
     #loading{
         background-size: 80%;
-    }  
+    }
+    
+    
 
     .Wallpaper-section{
         background-image: url("../img/carousel-1.jpg");
