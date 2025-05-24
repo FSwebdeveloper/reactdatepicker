@@ -985,6 +985,12 @@ body {
    max-width: 47%;
 }
 
+.about-text-img2{
+    height: auto;
+    width: 100%;
+    max-width:50%; 
+}
+
 .about-into{
     text-transform: uppercase;
     letter-spacing: 5px;

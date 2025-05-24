@@ -1,7 +1,7 @@
 const destinationItem = [
     {
         id: "1",
-        item: "./img/destination-1.jpg",
+        item: "./img/destination1.avif",
         city: "United States",
 
     },
@@ -17,7 +17,7 @@ const destinationItem = [
     },
     {
         id: "4",
-        item: "./img/destination-4.jpg",
+        item: "./img/destination4.jpg",
         city: "India",
         
     },
@@ -30,7 +30,7 @@ const destinationItem = [
 
     {
         id: "6",
-        item: "./img/destination-6.jpg",
+        item: "./img/destination6.jpg",
         city: "Indonesia",
         
     },

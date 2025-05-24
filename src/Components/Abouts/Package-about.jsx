@@ -18,7 +18,7 @@ const Packageabout = () => {
             <p className='about-tex-details'>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
             <div className='about-text-image'>
               <img className='about-text-img' src='./img/about-1.jpg' alt='about-1-img'/>
-              <img className='about-text-img' src='./img/about-2.jpg' alt='about-2-img'/>
+              <img className='about-text-img' src='./img/about2.jpg' alt='about-2-img'/>
             </div>
             <div className='button-sec'>
             <button className='btn' type='submit'>Submit</button>

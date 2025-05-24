@@ -12,7 +12,7 @@ const element = [
     },
     {
         id: "3",
-        item: "./img/package-3.jpg",
+        item: "./img/package3.avif",
         
     },
     {
@@ -22,13 +22,13 @@ const element = [
     },
     {
         id: "5",
-        item: "./img/package-5.jpg",
+        item: "./img/package5.webp",
         
     },
 
     {
         id: "6",
-        item: "./img/package-6.jpg",
+        item: "./img/package6.jpg",
         
     },
     
