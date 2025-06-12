@@ -76,7 +76,7 @@ const Footer = () => {
       <div className='services-link'>
       <p><i class="fa-solid contact-us-icon fa-location-dot"></i> H.N Road, Cooch Behar</p>
           <p> <i class="fa-solid contact-us-icon  fa-phone"></i> +917031130622</p>
-          <p> <i class="fa-sharp  contact-us-icon  fa-solid fa-envelope"></i> myfreshairtrip@gmail.com</p>
+          <p> <i class="fa-sharp  contact-us-icon  fa-solid fa-envelope"></i> info@xplorigo.com</p>
           <h5 className='follow-content f-content-title news-letter-title'>NewsLetter</h5>
           <Submitemail/>
       </div>
